@@ -6,15 +6,12 @@ document.getElementById('mybtn').addEventListener('click', museum)
 function museum () {
   const age = (document.getElementById('age').value)
   const day = (document.getElementById('day').value)
-  let Tuesday = Date
-  let Thursday = Date
-  if (age >=12 && age <=21) {
+  let Tuesday = 'day'
+  let Thursday = 'day'
+  if (age >=12 && age <=21 || day == Tuesday || day == Thursday) {
     alert('eligible for student pricing')
     //makes an alert pop up
-  } else if (day == Tuesday || day == Thursday) {
-    alert('eligible for student pricing') 
-    //makes an alert pop up  
-  } else {
+   } else {
     alert('must pay regular pricing')
     //makes an alert pop up
   }
