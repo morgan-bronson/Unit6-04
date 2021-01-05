@@ -5,10 +5,10 @@ document.getElementById('mybtn').addEventListener('click', museum)
 
 function museum () {
   const age = (document.getElementById('age').value)
+  //gets age from html document
   const day = (document.getElementById('day').value)
-  let Tuesday = 'day'
-  let Thursday = 'day'
-  if (age >=12 && age <=21 || day == Tuesday || day == Thursday) {
+  //gets day of week from html document
+  if ((age >=12 && age <=21) || day == 'Tuesday' || day == 'Thursday') {
     alert('eligible for student pricing')
     //makes an alert pop up
    } else {
