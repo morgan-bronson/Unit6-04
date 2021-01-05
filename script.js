@@ -10,7 +10,7 @@ function museum () {
   // gets day of week from html document
   if ((age >= 12 && age <= 21) || day === 'Tuesday' || day === 'Thursday') {
     alert('eligible for student pricing')
-    / /makes an alert pop up
+    // makes an alert pop up
   } else {
     alert('must pay regular pricing')
     // makes an alert pop up
